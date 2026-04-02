@@ -9,50 +9,50 @@ const LeadConnectorWidget = dynamic(
 
 export default function HeroSection() {
   return (
-    <section className="bg-[#f0f0ee] pt-[68px] min-h-[90vh] flex items-center">
-      <div className="max-w-7xl mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+    <section className="bg-[#f0f0ee]">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-16 relative top-11">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-start">
 
           {/* ── LEFT CONTENT ── */}
-          <div className="space-y-8">
-            <h1 className="text-4xl md:text-5xl font-extrabold text-[#111] leading-tight">
-              Analysez votre visibilité<br />
+          <div className="space-y-6 sm:space-y-8 text-center lg:text-left lg:sticky lg:top-[88px]">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#111] leading-tight">
+              Analysez votre visibilité{" "}
               <span className="text-[#32DC32]">digitale en 1 min !</span>
             </h1>
 
-            <div className="relative">
+            <div className="relative flex justify-center lg:justify-start">
               <Image
                 src="/Audit.webp"
                 alt="Audit Digital ClientX"
                 width={520}
                 height={320}
-                className="w-full max-w-125 h-auto rounded-2xl object-cover"
+                className="w-full max-w-sm sm:max-w-md lg:max-w-full h-auto rounded-2xl object-cover"
                 unoptimized
               />
             </div>
 
-            {/* Stats / Social Proof */}
-            <div className="space-y-4">
-               <p className="text-lg text-[#111]">
-                <span className="font-extrabold text-[#32DC32]">+100 000 </span> Clients nous font confiance
+            <div className="space-y-3 sm:space-y-4">
+              <p className="text-base sm:text-lg text-[#111]">
+                <span className="font-extrabold text-[#32DC32]">+100 000 </span>
+                Clients nous font confiance
               </p>
-              <p className="text-lg text-[#111]">
-                <span className="font-extrabold text-[#32DC32]"> Une agence certifiée ISO 9001</span>
+              <p className="text-base sm:text-lg text-[#111]">
+                <span className="font-extrabold text-[#32DC32]">
+                  Une agence certifiée ISO 9001
+                </span>
               </p>
             </div>
           </div>
 
           {/* ── RIGHT CONTENT (The Widget Card) ── */}
-          <div className="w-full">
-            <div className="bg-white rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-gray-100 overflow-hidden">
-              <div className="p-8 text-center border-b border-gray-50">
-                <h2 className="text-2xl font-bold text-[#111]">
+          <div className="w-full" id="audit">
+            <div className="bg-white rounded-2xl sm:rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-gray-100 overflow-visible">
+              <div className="px-5 sm:px-8 py-5 sm:py-6 text-center border-b border-gray-50">
+                <h2 className="text-xl sm:text-2xl font-bold text-[#111]">
                   Obtenez votre audit visibilité gratuit
                 </h2>
               </div>
-
-              {/* The Widget is now the main hero action */}
-              <div className="p-2" id="audit">
+              <div className="p-2 sm:p-3">
                 <LeadConnectorWidget />
               </div>
             </div>

@@ -10,10 +10,9 @@ import { Menu, X, Phone } from "lucide-react";
 
 const NAV_LINKS: { label: string; href: string }[] = [
   { label: "Découvrir ClientX", href: "https://clientx.uk" },
-  { label: "Nos services",      href: "https://clientx.uk" },
+  { label: "Calculateur Roi",      href: "https://clientx.uk/calculer-votre-retour-sur-investissement/" },
   { label: "Blog",              href: "https://clientx.uk/blog" },
-  { label: "Rejoignez-nous",    href: "https://clientx.uk" },
-  { label: "Nous contacter",    href: "#audit" },
+  { label: "Nous contacter",    href: "https://clientx.uk/contact" },
 ];
 
 export default function Navbar() {
@@ -35,7 +34,8 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6 h-[68px] flex items-center justify-between">
 
         {/* Logo */}
-        <Image
+       <a href="https://clientx.uk">
+         <Image
           src="https://clientx.uk/wp-content/uploads/2026/01/clientx-iso.png"
           alt="ClientX"
           width={130}
@@ -43,7 +43,8 @@ export default function Navbar() {
           className="h-20 w-auto"
           priority
           unoptimized
-        />
+        /> 
+       </a>
 
         {/* Desktop nav links */}
         <nav className="hidden md:flex items-center gap-6">
