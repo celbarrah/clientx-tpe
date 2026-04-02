@@ -10,7 +10,7 @@ const LeadConnectorWidget = dynamic(
 export default function HeroSection() {
   return (
     <section className="bg-[#f0f0ee]">
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-16 relative top-11">
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-16 relative top-26">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-start">
 
           {/* ── LEFT CONTENT ── */}
